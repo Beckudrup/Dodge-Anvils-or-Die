@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 10340078}
   - component: {fileID: 10340082}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: PlayerHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -756,7 +756,7 @@ GameObject:
   - component: {fileID: 1201277756}
   - component: {fileID: 1201277757}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: PlayerBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
