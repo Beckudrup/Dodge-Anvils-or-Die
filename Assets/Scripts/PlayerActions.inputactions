@@ -3,12 +3,12 @@
     "maps": [
         {
             "name": "Movement",
-            "id": "a563a2d0-06b2-46fc-a39d-7574e5054742",
+            "id": "07d08355-2b0b-4439-87a4-a9f10e111602",
             "actions": [
                 {
                     "name": "Move",
                     "type": "Value",
-                    "id": "8d02d611-6d56-4984-a477-25890b58b31b",
+                    "id": "56d82755-c315-430f-a2eb-b4cb97f28163",
                     "expectedControlType": "Vector3",
                     "processors": "",
                     "interactions": "",
@@ -17,7 +17,7 @@
                 {
                     "name": "Jump",
                     "type": "Button",
-                    "id": "98321d6f-2e3d-41a4-a2ab-228060deccca",
+                    "id": "928438ea-31f3-4b50-bab5-eefc9a3b8263",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -26,30 +26,8 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "9a2b4e44-f345-4740-94ef-288a67a59457",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "965078f7-bbf8-4fbc-89a6-7cc09801a6d5",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "WASD - 3D Vector",
-                    "id": "4b0c73b4-676c-449c-b8ca-5b6bfde7733c",
+                    "name": "Moving - 3D Vector",
+                    "id": "5be38230-c4e2-4b52-abc0-ee178c34d774",
                     "path": "3DVector",
                     "interactions": "",
                     "processors": "",
@@ -60,7 +38,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "ed5b9587-38cf-4f78-829b-0f1d51d3557a",
+                    "id": "5ea875c9-a221-4edf-bee2-675a55171866",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -71,7 +49,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "800e7d07-fbee-4d25-a6bf-0e9946c5299a",
+                    "id": "6fe6a41d-8028-491d-82a2-6d89ae27d54f",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -82,7 +60,7 @@
                 },
                 {
                     "name": "forward",
-                    "id": "e633fc8c-28a1-4d4a-bea2-db5810330ca0",
+                    "id": "b7b6b095-8b43-47a8-ad22-c92c46ae4de9",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -93,7 +71,7 @@
                 },
                 {
                     "name": "backward",
-                    "id": "701fb645-c60b-4573-b831-61ed6296fac3",
+                    "id": "896bb9f0-f35a-4447-b9d8-0cefb8544e68",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -101,6 +79,17 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "5b31cd11-591a-465b-ad62-ddf780d58f49",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
