@@ -26,8 +26,8 @@
             ],
             "bindings": [
                 {
-                    "name": "Moving - 3D Vector",
-                    "id": "5be38230-c4e2-4b52-abc0-ee178c34d774",
+                    "name": "P2 Moving - 3D Vector",
+                    "id": "3fa4622b-b08a-42b0-8048-ebc6762a1542",
                     "path": "3DVector",
                     "interactions": "",
                     "processors": "",
@@ -38,55 +38,121 @@
                 },
                 {
                     "name": "left",
-                    "id": "5ea875c9-a221-4edf-bee2-675a55171866",
-                    "path": "<Keyboard>/a",
+                    "id": "755240dd-12fe-4140-a0e4-c894a2e9dec4",
+                    "path": "<Keyboard>/numpad4",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Player2",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "right",
-                    "id": "6fe6a41d-8028-491d-82a2-6d89ae27d54f",
-                    "path": "<Keyboard>/d",
+                    "id": "193b0afb-99c9-439d-9d73-c0c30025e767",
+                    "path": "<Keyboard>/numpad6",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Player2",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "forward",
-                    "id": "b7b6b095-8b43-47a8-ad22-c92c46ae4de9",
-                    "path": "<Keyboard>/w",
+                    "id": "3e9a374f-0e3c-4f58-8cc4-0d541f8cbf4a",
+                    "path": "<Keyboard>/numpad8",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Player2",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "backward",
-                    "id": "896bb9f0-f35a-4447-b9d8-0cefb8544e68",
-                    "path": "<Keyboard>/s",
+                    "id": "4f5b5635-8616-44a0-91cd-c093a4449a70",
+                    "path": "<Keyboard>/numpad5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player2",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "P1 Movement- 3D Vector",
+                    "id": "451db31c-8254-467b-a261-33d80f85f23b",
+                    "path": "3DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "34fc0063-546a-4a41-af8c-6f53eda1f9e5",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player1",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "a6e795c8-a748-4216-a534-9078f3be05f3",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player1",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "forward",
+                    "id": "32b96da4-4790-4824-a1d0-cfe483e35e1e",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player1",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "backward",
+                    "id": "31c90a47-4071-469f-9134-e5e396e1a938",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player1",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "",
-                    "id": "5b31cd11-591a-465b-ad62-ddf780d58f49",
+                    "id": "e98e0d7a-3848-4de9-abb1-e1a0993ef430",
+                    "path": "<Keyboard>/rightShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player2",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8df914b1-79e3-4c84-9ad4-b6624f64e6f9",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Player1",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -94,5 +160,28 @@
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "Player2",
+            "bindingGroup": "Player2",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Player1",
+            "bindingGroup": "Player1",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
 }

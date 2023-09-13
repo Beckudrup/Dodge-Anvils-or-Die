@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     private int playerSpeed = 3;
     //private int jumpHeight = 5;
 
-    public Transform orientation;
+    //public Transform orientation;
 
     Rigidbody playerBody;
     
@@ -24,11 +24,11 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
-        //playerActions.Enable();
+        playerActions.Enable();
     }
     private void OnDisable()
     {
-        //playerActions.Disable();
+        playerActions.Disable();
     }
 
 
@@ -41,10 +41,15 @@ public class PlayerController : MonoBehaviour
 
     void PlayerMove()
     {
-        Vector3 playerMove = playerActions.Movement.Move.ReadValue<Vector3>();
-        Debug.Log(playerMove);
-        playerBody.velocity = transform.TransformDirection(playerMove).normalized*playerSpeed;
-        
+        if (GameObject.FindWithTag("Player1"))
+        {
+            Vector3 playerMove = playerActions.Movement.Move.ReadValue<Vector3>();
+            Debug.Log(playerMove);
+            playerBody.velocity = transform.TransformDirection(playerMove) * playerSpeed;
+
+        }
+
+
 
         /*if (playerActions.Movement.Jump.triggered)
         {
